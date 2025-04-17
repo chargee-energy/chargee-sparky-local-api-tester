@@ -1,0 +1,39 @@
+{
+  "dsmrVersion": 50,
+  "timestamp": "250417135216S",
+  "equipmentId": "534D363238383830303031",
+  "totalConsumedTariff1": "000419.758*kWh",
+  "totalConsumedTariff2": "000000.000*kWh",
+  "totalProducedTariff1": "000419.760*kWh",
+  "totalProducedTariff2": "000000.000*kWh",
+  "tariffIndicator": 1,
+  "currentPowerConsumption": "00.407*kW",
+  "currentPowerProduction": "00.000*kW",
+  "powerFailureCount": 0,
+  "longPowerFailureCount": 0,
+  "textMessage": "4C6F72656D20697073756D202D2050312074657874206D657373616765",
+  "phase1PowerL1": "00.407*kW",
+  "phase1PowerL2": "00.000*kW",
+  "phase1PowerL3": "00.000*kW",
+  "phase2PowerL1": "00.000*kW",
+  "phase2PowerL2": "00.000*kW",
+  "phase2PowerL3": "00.000*kW",
+  "voltageL1": "231.0*V",
+  "voltageL2": "230.0*V",
+  "voltageL3": "230.0*V",
+  "currentL1": "002*A",
+  "currentL2": "000*A",
+  "currentL3": "000*A",
+  "gasDeviceType": 3,
+  "gasEquipmentId": 47415349443130300000,
+  "gasMeasurement": {
+    "timestamp": "250417135032S",
+    "value": "00000.000*m3"
+  },
+  "waterDeviceType": 3,
+  "waterEquipmentId": 47415349443130300000,
+  "waterMeasurement": {
+    "timestamp": "250417135032S",
+    "value": "00000.000*m3"
+  }
+}

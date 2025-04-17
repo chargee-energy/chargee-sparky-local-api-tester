@@ -30,26 +30,14 @@ function run_web_service() {
   echo "Logs written to $LOGFILE"
 }
 
-function stop_script() {
-  if [ -f "$PIDFILE" ]; then
-    PID=$(cat "$PIDFILE")
-    echo "Stopping DSMR reader (PID: $PID)..."
-    kill "$PID" && rm "$PIDFILE"
-    echo "Stopped."
-  else
-    echo "No running script found."
-  fi
-}
-
 function show_menu() {
   echo "=============================="
   echo " Chargee Sparky local API tester"
   echo "=============================="
   echo "1) Output to terminal"
-  echo "2) Save to sparky.json"
+  echo "2) Save to sparky.json (continuously)"
   echo "3) Start REST API service"
-  echo "4) Stop DSMR reader"
-  echo "5) Exit"
+  echo "4) Quit application"
   echo "------------------------------"
 }
 
@@ -60,8 +48,7 @@ while true; do
     1) run_terminal_output ;;
     2) run_file_output ;;
     3) run_web_service ;;
-    4) stop_script ;;
-    5) echo "Bye 👋"; exit 0 ;;
+    4) echo "Bye 👋"; exit 0 ;;
     *) echo "Invalid option" ;;
   esac
 done

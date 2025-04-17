@@ -37,6 +37,8 @@ client.on('data', (data) => {
        }
        if (OUTPUT_TO_FILE) {
            fs.writeFileSync(OUTPUT_FILE, JSON.stringify(parsed, null, 2));
+           console.log(`Saved DSMR reading to ${OUTPUT_FILE}`);
+           process.exit(0);
        }
        if (OUTPUT_TO_API) {
            console.log('DSMR message updated (API mode)');

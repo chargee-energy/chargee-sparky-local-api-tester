@@ -35,7 +35,7 @@ function show_menu() {
   echo " Chargee Sparky local API tester"
   echo "=============================="
   echo "1) Output to terminal"
-  echo "2) Save to sparky.json (continuously)"
+  echo "2) Save to sparky.json"
   echo "3) Start REST API service"
   echo "4) Quit application"
   echo "------------------------------"
